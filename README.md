@@ -1,6 +1,6 @@
 # Checkbox&radio
 
-![enter image description here](http://i.imgur.com/OTIOLqC.png)
+![enter image description here](http://i.imgur.com/F3jgxTn.png)
 
 ## Quick start
 * Clone the repo: git clone git@github.com:crazychicken/checkbox-radio.git
