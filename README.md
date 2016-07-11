@@ -4,7 +4,7 @@
 
 ## Quick start
 * Clone the repo: git clone git@github.com:crazychicken/checkbox-radio.git
-* Install with npm: npm install checkbox&radio
+* Install with npm: npm install crazychicken/checkbox-radio
 
 ## Demo
 http://project.tuds.ninja/checkbox-radio/
