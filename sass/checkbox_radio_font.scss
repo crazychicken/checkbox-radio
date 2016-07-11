@@ -1,0 +1,62 @@
+@import '../node_modules/font-awesome/css/font-awesome.min';
+.container {
+	font-family: Arial;
+	width: 600px;
+	margin: 0 auto;
+	font-size: 13px;
+}
+/*CSS ALL*/
+.checkbox,
+.radio {
+	display: inline-block;
+	margin-bottom: 15px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+	display: none;
+	& + i:before {
+		content: "\f096";
+		position: relative;
+		bottom: -4px;
+		margin-right: 5px;
+		color: #999;
+	}
+}
+
+.checkbox:hover input[type="checkbox"],
+.radio:hover input[type="radio"] {
+	& + i:before {
+		color: green;
+	}
+}
+
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+	&:checked + i:before {
+		content: "\f046";
+		color: green;
+	}
+	&:disabled:checked + i:before {
+		color: #ddd;
+	}
+}
+
+/*RADIO*/
+.radio input[type="radio"] {
+	&  + i:before {
+		content: "\f1db";
+	}
+	&:checked + i:before {
+		content: "\f058";
+	}
+	&:disabled + i:before {
+		color: #ddd;
+	}
+}
+
+

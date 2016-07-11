@@ -1,0 +1,60 @@
+.container {
+  font-family: Arial;
+  width: 600px;
+  margin: 0 auto;
+  font-size: 13px; }
+
+/*CSS ALL*/
+.checkbox,
+.radio {
+  display: inline-block;
+  margin-bottom: 15px; }
+  .checkbox:hover,
+  .radio:hover {
+    cursor: pointer; }
+
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+  display: none; }
+
+.icon-checkbox,
+.icon-radio {
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+  display: inline-block;
+  border: 1px solid #ddd;
+  position: relative;
+  bottom: -3px; }
+
+.checkbox:hover .icon-checkbox,
+.radio:hover .icon-radio {
+  border-color: green; }
+
+.checkbox input[type="checkbox"]:checked + i:after,
+.radio input[type="radio"]:checked + i:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  height: 8px;
+  width: 8px;
+  background: green;
+  left: 4px; }
+
+.checkbox input[type="checkbox"]:disabled + i,
+.radio input[type="radio"]:disabled + i {
+  border-color: #eee; }
+
+.checkbox input[type="checkbox"]:disabled:checked + i:after,
+.radio input[type="radio"]:disabled:checked + i:after {
+  background-color: #999; }
+
+/*Radio CSS*/
+.radio input[type="radio"] + i {
+  border-radius: 50%; }
+
+.radio input[type="radio"]:checked + .icon-radio:after {
+  border-radius: 50%; }
+
+.disabled:hover {
+  cursor: not-allowed; }

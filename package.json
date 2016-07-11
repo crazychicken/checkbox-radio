@@ -1,0 +1,29 @@
+{
+  "name": "checkbox-radio",
+  "title": "html/css",
+  "desciption": "Custom style for checkbox & radio",
+  "version": "1.0.0",
+  "author": "tuds",
+  "url": "git@github.com:crazychicken/checkbox-radio.git",
+  "keywords": [
+    "html",
+    "css",
+    "sass",
+    "web",
+    "front-end"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:crazychicken/checkbox-radio.git"
+  },
+  "devDependencies": {
+    "bootstrap": "3.3.6",
+    "font-awesome": "4.6.3",
+    "gulp": "^3.9.0",
+    "gulp-sass": "2.1.1",
+    "browser-sync": "2.11.1",
+    "normalize.css": "4.2.0"
+  },
+  "homepage":"http://tuds.ninja",
+  "licenes": "MIT"
+}

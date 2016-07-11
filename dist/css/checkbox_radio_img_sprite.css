@@ -1,0 +1,55 @@
+.container {
+  font-family: Arial;
+  width: 600px;
+  margin: 0 auto;
+  font-size: 13px; }
+
+/*CSS ALL*/
+.checkbox,
+.radio {
+  margin-bottom: 15px;
+  display: inline-block; }
+  .checkbox:hover,
+  .radio:hover {
+    cursor: pointer; }
+
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+  display: none; }
+  .checkbox input[type="checkbox"] + i,
+  .radio input[type="radio"] + i {
+    width: 22px;
+    height: 22px;
+    background: url("http://i.imgur.com/PIjBaZK.png") 0 0 no-repeat;
+    display: inline-block;
+    position: relative;
+    bottom: -4px;
+    margin-right: 5px; }
+
+.checkbox:hover input[type="checkbox"] + .icon-checkbox {
+  background-position: -24px 0; }
+
+.checkbox input[type="checkbox"]:checked + .icon-checkbox {
+  background-position: -48px 0; }
+
+.checkbox input[type="checkbox"]:disabled + .icon-checkbox {
+  background-position: -72px 0; }
+
+.checkbox input[type="checkbox"]:disabled:checked + .icon-checkbox {
+  background-position: -96px 0; }
+
+/*RADIO*/
+.radio:hover input[type="radio"] + .icon-radio {
+  background-position: -144px 0; }
+
+.radio input[type="radio"] + .icon-radio {
+  background-position: -120px 0; }
+
+.radio input[type="radio"]:checked + .icon-radio {
+  background-position: -168px 0; }
+
+.radio input[type="radio"]:disabled + .icon-radio {
+  background-position: -192px 0; }
+
+.radio input[type="radio"]:disabled:checked + .icon-radio {
+  background-position: -216px 0; }
