@@ -7,7 +7,7 @@
 * Install with npm: npm install crazychicken/checkbox-radio
 
 ## Demo
-http://project.tuds.ninja/checkbox-radio/
+http://project.tuds.ninja/checkbox-radio/dist/
 
 ## Template full feature list
 
