@@ -2,7 +2,7 @@
   "name": "checkbox-radio",
   "title": "html/css",
   "desciption": "Custom style for checkbox & radio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "tuds",
   "url": "git@github.com:crazychicken/checkbox-radio.git",
   "keywords": [
@@ -15,6 +15,9 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:crazychicken/checkbox-radio.git"
+  },
+  "engines": {
+    "node": ">=0.10.28"
   },
   "devDependencies": {
     "bootstrap": "3.3.6",
