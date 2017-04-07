@@ -2,7 +2,7 @@
   "name": "checkbox-radio",
   "title": "html/css",
   "desciption": "Custom style for checkbox & radio",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "tuds",
   "url": "git@github.com:crazychicken/checkbox-radio.git",
   "keywords": [
@@ -27,6 +27,6 @@
     "browser-sync": "2.11.1",
     "normalize.css": "4.2.0"
   },
-  "homepage":"http://tuds.ninja",
+  "homepage": "http://tuds.ninja",
   "licenes": "MIT"
 }
