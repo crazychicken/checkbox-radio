@@ -2085,12 +2085,6 @@
   overflow: visible;
   clip: auto; }
 
-.container {
-  font-family: Arial;
-  width: 600px;
-  margin: 0 auto;
-  font-size: 13px; }
-
 /*CSS ALL*/
 .checkbox,
 .radio {
