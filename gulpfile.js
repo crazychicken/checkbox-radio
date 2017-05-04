@@ -9,6 +9,13 @@ gulp.task('html', function(){
 	.pipe(browser_sync.stream());
 });
 
+// Copy fonts
+gulp.task('fonts', function(){
+    gulp.src('./fonts/**')
+    .pipe(gulp.dest('./dist/fonts'))
+    .pipe(browser_sync.stream());
+});
+
 // Run Sass
 gulp.task('sass', function(){
 	gulp.src('./sass/*.scss')
@@ -37,4 +44,4 @@ gulp.task('browser_sync', ['html', 'sass', 'image'], function(){
 });
 
 // Run all task
-gulp.task('default', ['browser_sync']);
+gulp.task('default', ['browser_sync', 'fonts']);
