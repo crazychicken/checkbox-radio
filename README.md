@@ -1,14 +1,48 @@
 # Checkbox&radio
 
-![enter image description here](http://i.imgur.com/F3jgxTn.png)
+![enter image description here](http://tuds.ninja/checkbox-radio/dist/images/about-checkbox-radio.png)
 
 ## Quick start
-* Clone the repo: git clone git@github.com:crazychicken/checkbox-radio.git
-* Install with npm: npm install crazychicken/checkbox-radio
-* Install with npm: npm install '^1.x.x'
+* Clone the repo: `git clone git@github.com:crazychicken/checkbox-radio.git`
+* Install with npm: `npm install crazychicken/checkbox-radio`
+* Install with npm: `npm install --save-dev checkbox-radio`
+* Or download the [latest release](https://github.com/crazychicken/checkbox-radio/archive/master.zip)
 
 ## Demo
 http://tuds.ninja/checkbox-radio/dist/
+
+## How to use
+
+* First, include CSS files into your HTML head:
+```html
+<link type="text/css" rel="stylesheet" href="./dist/theme/css/checkbox_radio_img_sprite.css">
+```
+
+* Set HTML
+```html
+<label class="checkbox">
+    <input type="checkbox">
+    <i class="icon-checkbox"></i>
+    Default
+</label>
+```
+
+## Tree
+```
+dist/
+  └── css/
+  |   ├── checkbox_radio.css
+  |   └── checkbox_radio_bootstrap.css
+  |   └── checkbox_radio_font.css
+  |   └── checkbox_radio_img_sprite.css
+  └── fonts/
+  └── images/
+sass/
+  ├── checkbox_radio.css
+  └── checkbox_radio_bootstrap.css
+  └── checkbox_radio_font.css
+  └── checkbox_radio_img_sprite.css
+```
 
 ## Template full feature list
 
@@ -23,8 +57,10 @@ http://tuds.ninja/checkbox-radio/dist/
 
 #### Tuds
 * website: http://tuds.ninja/
+* Github:   https://github.com/crazychicken/checkbox-radio
 * Facebook: https://www.facebook.com/tudscss/
-* Youtube: https://www.youtube.com/channel/UCDACe-7BFGDucQoxTDfPotw
+* Youtube:  https://www.youtube.com/channel/UCDACe-7BFGDucQoxTDfPotw
+* Twtter:   https://twitter.com/mtu_truong
 
 ## Copyright and license
 

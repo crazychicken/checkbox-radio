@@ -8,6 +8,9 @@
 	&:hover {
 		cursor: pointer;
 	}
+    .fa {
+        width: 1em;
+    }
 }
 
 .checkbox input[type="checkbox"],
@@ -48,8 +51,5 @@
 	}
 	&:checked + i:before {
 		content: "\f058";
-	}
-	&::disabled + i:before {
-		color: #ddd;
 	}
 }

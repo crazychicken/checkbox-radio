@@ -2093,6 +2093,9 @@
   .checkbox:hover,
   .radio:hover {
     cursor: pointer; }
+  .checkbox .fa,
+  .radio .fa {
+    width: 1em; }
 
 .checkbox input[type="checkbox"],
 .radio input[type="radio"] {
@@ -2114,7 +2117,9 @@
   content: "\f046";
   color: green; }
 
+.checkbox input[type="checkbox"]:disabled + i:before,
 .checkbox input[type="checkbox"]:disabled:checked + i:before,
+.radio input[type="radio"]:disabled + i:before,
 .radio input[type="radio"]:disabled:checked + i:before {
   color: #ddd; }
 
@@ -2124,6 +2129,3 @@
 
 .radio input[type="radio"]:checked + i:before {
   content: "\f058"; }
-
-.radio input[type="radio"]:disabled + i:before {
-  color: #ddd; }

@@ -1,0 +1,33 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+kramdown:
+  auto_ids: true
+
+# Permalinks
+permalink:        pretty
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+# Social
+title: t-scroll
+description: Library animation scroll with HTML5, CSS3, Javascript, ES6, Animate ...
+twitter: https://twitter.com/mtu_truong
+authors: Tuds - Crazychicken
+social_logo_path: http://tuds.ninja/checkbox-radio/dist/
+social_image_path: http://t-scroll.com/theme/images/about.png
+
+# Custom vars
+current_version:  1.0.2
+repo:             https://github.com/crazychicken/t-scroll.git
+
+download:
+  source:         https://github.com/crazychicken/checkbox-radio/archive/master.zip
+  dist:           https://github.com/crazychicken/checkbox-radio/archive/master.zip
+
+blog:             http://tuds.ninja/checkbox-radio/dist/
+expo:             http://tuds.ninja/
+themes:           http://tuds.ninja/

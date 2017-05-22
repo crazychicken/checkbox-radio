@@ -7544,6 +7544,9 @@ button.close {
   .checkbox:hover,
   .radio:hover {
     cursor: pointer; }
+  .checkbox .fa,
+  .radio .fa {
+    width: 1em; }
 
 .checkbox input[type="checkbox"],
 .radio input[type="radio"] {
@@ -7577,6 +7580,3 @@ button.close {
 
 .radio input[type="radio"]:checked + i:before {
   content: "\f058"; }
-
-.radio input[type="radio"]::disabled + i:before {
-  color: #ddd; }
