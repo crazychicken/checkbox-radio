@@ -36,6 +36,30 @@
 	}
 }
 
+/*CHECKBOX-XS*/
+.checkbox-xs input[type="checkbox"],
+.radio-xs input[type="radio"] {
+    & + i {
+        height: 16px;
+        width: 16px;
+        background-size: 160px 16px;
+    }
+}
+.checkbox-xs:hover input[type="checkbox"] + .icon-checkbox {
+    background-position: -16px 0;
+}
+.checkbox-xs input[type="checkbox"] {
+    &:checked + .icon-checkbox {
+        background-position: -32px 0;
+    }
+    &:disabled + .icon-checkbox {
+        background-position: -48px 0;
+    }
+    &:disabled:checked + .icon-checkbox {
+        background-position: -64px 0;
+    }
+}
+
 
 /*RADIO*/
 .radio:hover input[type="radio"] + .icon-radio {
@@ -54,6 +78,24 @@
 	&:disabled:checked + .icon-radio {
 		background-position: -216px 0;
 	}
+}
+/*RADIO-XS*/
+.radio-xs:hover input[type="radio"] + .icon-radio {
+    background-position: -112px 0;
+}
+.radio-xs input[type="radio"] {
+    & + .icon-radio {
+        background-position: -80px 0;
+    }
+    &:checked + .icon-radio {
+        background-position: -112px 0;
+    }
+    &:disabled + .icon-radio {
+        background-position: -128px 0;
+    }
+    &:disabled:checked + .icon-radio {
+        background-position: -144px 0;
+    }
 }
 
 
