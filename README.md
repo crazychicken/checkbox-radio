@@ -15,15 +15,36 @@ http://tuds.ninja/checkbox-radio/dist/
 
 * First, include CSS files into your HTML head:
 ```html
-<link type="text/css" rel="stylesheet" href="./dist/theme/css/checkbox_radio_img_sprite.css">
+<link type="text/css" rel="stylesheet" href="./dist/css/checkbox_radio_img_sprite.css">
 ```
 
-* Set HTML
+* Set HTML Checkbox
 ```html
 <label class="checkbox">
     <input type="checkbox">
     <i class="icon-checkbox"></i>
     Default
+</label>
+<br>
+<label class="checkbox">
+    <input type="checkbox" checked>
+    <i class="icon-checkbox"></i>
+    Checked
+</label>
+```
+
+* Set HTML Radio
+```html
+<label class="radio">
+    <input type="radio" name="group-radio">
+    <i class="icon-radio"></i>
+    Default
+</label>
+<br>
+<label class="radio">
+    <input type="radio" name="group-radio" checked>
+    <i class="icon-radio"></i>
+    Checked
 </label>
 ```
 
@@ -43,6 +64,13 @@ sass/
   └── checkbox_radio_font.css
   └── checkbox_radio_img_sprite.css
 ```
+
+## Options style
+
+* checkbox_radio.css
+* checkbox_radio_bootstrap.css
+* checkbox_radio_font.css
+* checkbox_radio_img_sprite.css
 
 ## Template full feature list
 
