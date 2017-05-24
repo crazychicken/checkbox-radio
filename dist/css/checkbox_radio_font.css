@@ -2129,3 +2129,8 @@
 
 .radio input[type="radio"]:checked + i:before {
   content: "\f058"; }
+
+/* CHECKBOX&RADIO XS*/
+.checkbox-xs input[type="checkbox"] + i:before,
+.radio-xs input[type="radio"] + i:before {
+  bottom: 0; }

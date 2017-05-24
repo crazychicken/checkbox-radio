@@ -10,7 +10,11 @@
     "css",
     "sass",
     "web",
-    "front-end"
+    "front-end",
+    "checkbox_radio",
+    "checkbox_radio_bootstrap",
+    "checkbox_radio_font",
+    "checkbox_radio_img_sprite"
   ],
   "repository": {
     "type": "git",

@@ -15,8 +15,8 @@
 
 .icon-checkbox,
 .icon-radio {
-	height: 16px;
-	width: 16px;
+	height: 20px;
+	width: 20px;
 	margin-right: 5px;
 	display: inline-block;
 	border: 1px solid #ddd;
@@ -34,11 +34,11 @@
 	&:checked + i:after {
 		content: "";
 		position: absolute;
-		top: 4px;
-		height: 8px;
-		width: 8px;
-		background: green;
-		left: 4px;
+		top: 6px;
+		left: 6px;
+        height: 8px;
+        width: 8px;
+        background: green;
 	}
 	&:disabled + i {
 		border-color: #eee;
@@ -60,4 +60,22 @@
 
 .disabled:hover {
 	cursor: not-allowed;
+}
+
+.checkbox-xs,
+.radio-xs {
+    .icon-checkbox,
+    .icon-radio {
+        height: 14px;
+        width: 14px;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        &:checked + i:after {
+            top: 4px;
+            left: 4px;
+            height: 6px;
+            width: 6px;
+        }
+    }
 }

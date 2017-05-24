@@ -4,7 +4,7 @@ var browser_sync = require('browser-sync').create();
 
 // Copy html
 gulp.task('html', function(){
-	gulp.src('./*.html')
+	gulp.src(['./index.html', './html/*.html'])
 	.pipe(gulp.dest('./dist'))
 	.pipe(browser_sync.stream());
 });
@@ -38,7 +38,7 @@ gulp.task('browser_sync', ['html', 'sass', 'image'], function(){
 			baseDir: "./dist"
 		}
 	});
-	gulp.watch('./*.html', ['html']);
+	gulp.watch(['./index.html', './html/*.html'], ['html']);
 	gulp.watch('./sass/*.scss', ['sass']);
 	gulp.watch('./images/*', ['image']);
 });

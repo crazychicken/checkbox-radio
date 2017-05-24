@@ -54,4 +54,10 @@
 	}
 }
 
-
+/* CHECKBOX&RADIO XS*/
+.checkbox-xs input[type="checkbox"],
+.radio-xs input[type="radio"] {
+    & + i:before {
+        bottom: 0;
+    }
+}
