@@ -1,10 +1,20 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
+
+var htmlbeautify = require('gulp-html-beautify');
+var gulp_file_include = require('gulp-file-include');
 var browser_sync = require('browser-sync').create();
 
 // Copy html
 gulp.task('html', function(){
-	gulp.src(['./index.html', './html/*.html'])
+    var options = {
+        "indent_size": 4
+    };
+	gulp.src([
+        './index.html',
+        './html/*.html'
+    ])
+    .pipe(gulp_file_include())
 	.pipe(gulp.dest('./dist'))
 	.pipe(browser_sync.stream());
 });
@@ -38,7 +48,7 @@ gulp.task('browser_sync', ['html', 'sass', 'image'], function(){
 			baseDir: "./dist"
 		}
 	});
-	gulp.watch(['./index.html', './html/*.html'], ['html']);
+	gulp.watch(['./index.html', './html/**/*.html'], ['html']);
 	gulp.watch('./sass/*.scss', ['sass']);
 	gulp.watch('./images/*', ['image']);
 });

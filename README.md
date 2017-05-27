@@ -4,7 +4,7 @@
 
 ## Quick start
 * Clone the repo: `git clone git@github.com:crazychicken/checkbox-radio.git`
-* Install with npm: `npm install crazychicken/checkbox-radio`
+* Install with npm: `npm install --save-dev crazychicken/checkbox-radio`
 * Install with npm: `npm install --save-dev checkbox-radio`
 * Or download the [latest release](https://github.com/crazychicken/checkbox-radio/archive/master.zip)
 
@@ -84,11 +84,11 @@ sass/
 ## Creators
 
 #### Tuds
-* website: http://tuds.ninja/
+* Website:  http://tuds.ninja/
 * Github:   https://github.com/crazychicken/checkbox-radio
 * Facebook: https://www.facebook.com/tudscss/
 * Youtube:  https://www.youtube.com/channel/UCDACe-7BFGDucQoxTDfPotw
-* Twtter:   https://twitter.com/mtu_truong
+* Twitter:   https://twitter.com/mtu_truong
 
 ## Copyright and license
 

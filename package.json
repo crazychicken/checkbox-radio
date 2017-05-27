@@ -2,8 +2,7 @@
   "name": "checkbox-radio",
   "title": "html/css",
   "desciption": "Custom style for checkbox & radio",
-  "version": "1.0.8",
-  "author": "tuds",
+  "version": "1.0.9",
   "url": "git@github.com:crazychicken/checkbox-radio.git",
   "keywords": [
     "html",
@@ -11,26 +10,31 @@
     "sass",
     "web",
     "front-end",
+    "checkbox&radio",
     "checkbox_radio",
     "checkbox_radio_bootstrap",
     "checkbox_radio_font",
-    "checkbox_radio_img_sprite"
+    "checkbox_radio_img_sprite",
+    "tuds",
+    "crazychicken"
   ],
   "repository": {
     "type": "git",
     "url": "git@github.com:crazychicken/checkbox-radio.git"
   },
-  "engines": {
-    "node": ">=0.10.28"
-  },
-  "devDependencies": {
-    "bootstrap": "3.3.6",
-    "font-awesome": "4.6.3",
-    "gulp": "^3.9.0",
-    "gulp-sass": "2.1.1",
-    "browser-sync": "2.11.1",
-    "normalize.css": "4.2.0"
+  "author": "tuds - crazychicken",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crazychicken/checkbox-radio/issues"
   },
   "homepage": "http://tuds.ninja",
-  "licenes": "MIT"
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.18.8",
+    "font-awesome": "^4.7.0",
+    "gulp": "3.x.x",
+    "gulp-file-include": "^1.1.0",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-sass": "^3.1.0"
+  }
 }

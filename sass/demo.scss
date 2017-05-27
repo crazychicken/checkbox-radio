@@ -1,0 +1,99 @@
+body {
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+header {
+    text-align: center;
+    background: #f7f8f9;
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+.container {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 13px;
+}
+hr {
+    border: 1px solid #f7f8f9;
+}
+.box-well {
+    background: #fafafa;
+    border: 1px solid #f7f8f9;
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
+    overflow-y: scroll;
+}
+.show {
+    display: block;
+}
+.btn {
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    background-color: #1a8bb6;
+    padding: 5px 8px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+    color: #fff !important;
+    background-color: #316d84;
+}
+.btn small {
+    font-size: 11px;
+}
+.btn-toggle {
+    margin-bottom: 5px;
+}
+.group-social {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.group-social .btn {
+    float: left;
+    margin: 0 5px;
+}
+@media (max-width: 767px) {
+    .container {
+        width: 90%;
+        padding: 0 5%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .group-social {
+        right: 5%;
+    }
+}
+.footer {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 50px;
+    padding-bottom: 15px;
+}
+.footer small {
+    font-size: 11px;
+}
+.footer p {
+    margin: 5px 0;
+}

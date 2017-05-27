@@ -10,6 +10,7 @@
     <meta name="robots" content="noodp,index,follow" />
     <meta name='revisit-after' content='1 days' />
     <meta http-equiv="content-language" content="en" />
+    <meta content='http://tuds.ninja/checkbox-radio/images/ms-icon-310x310.png' property='og:image'/>
     <link rel="icon shortcut" type="image/png" sizes="16x16" href="http://t-scroll.com/theme/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
 	<style type="text/css">
@@ -50,19 +51,6 @@
         .tuds-seo {
             display: none;
         }
-        @media (max-width: 767px) {
-            .container {
-                width: 90%;
-                padding: 0 5%;
-            }
-            .banner {
-                width: 100%;
-                height: 150px;
-                display: inline-block;
-                background: url('./images/banner.png') center center no-repeat;
-                background-size: cover;
-            }
-        }
         .footer {
             float: left;
             width: 100%;
@@ -76,6 +64,50 @@
         }
         .footer p {
             margin: 5px 0;
+        }
+        .btn {
+            border: none;
+            background: none;
+            color: #fff;
+            font-size: 12px;
+            border-radius: 3px;
+            background-color: #1a8bb6;
+            padding: 5px 8px;
+            outline: none;
+            text-decoration: none;
+        }
+        .btn:hover {
+            color: #fff;
+            background-color: #316d84;
+        }
+        .group-social {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            text-align: center;
+        }
+        .group-social small {
+            font-size: 12px;
+        }
+        .group-social .btn {
+            float: left;
+            margin: 0 5px;
+        }
+        @media (max-width: 767px) {
+            .container {
+                width: 90%;
+                padding: 0 5%;
+            }
+            .banner {
+                width: 100%;
+                height: 150px;
+                display: inline-block;
+                background: url('./images/banner.png') center center no-repeat;
+                background-size: cover;
+            }
+            .group-social {
+                right: 5%;
+            }
         }
 	</style>
     <script>
@@ -92,7 +124,15 @@
     <h1 class="banner">
         <img class="tuds-seo" src="./images/about-checkbox-radio.png" alt="tuds crazychicken checkbox radio">
     </h1>
+    <div class="group-social">
+        <a href="https://github.com/crazychicken/checkbox-radio" class="btn">Github</a>
+        <a href="https://twitter.com/mtu_truong" class="btn">Twitter</a>
+        <!-- <br>
+        <small>Currently v1.0.6</small> -->
+    </div>
 	<div class="container">
+        <small>Currently v1.0.9</small>
+        <br>
 		<a target="_blank" href="checkbox_radio.html">
 			Checkbox & Radio custom style CSS
 		</a>
@@ -109,7 +149,7 @@
     <footer class="footer">
         Another thing from <a href="http://tuds.ninja">Tuds - Crazychicken.</a>
         <p>
-            <small>Code and documentation copyright 2017, MIT license.</small>
+            <small>Code and documentation copyright 2016, MIT license.</small>
         </p>
     </footer>
 </body>
