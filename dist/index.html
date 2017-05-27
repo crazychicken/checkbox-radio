@@ -3,6 +3,7 @@
 <head>
 	<title>Checkbox Radio | Tuds</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is checkbox & radio, easy way to add checkbox-radio to your site or blog, all you need to do is add css class into your html tag, checkbox-radio do not used jQuery or javascript, It's used CSS3">
     <meta name="keywords" content="HTML, CSS, XML, JavaScript, CSS3, ES6, Npm, tuds, Crazychicken, checkbox_radio, checkbox_radio_bootstrap, checkbox_radio_font, checkbox_radio_img_sprite">
     <meta name="author" content="Tuds - Crazychicken">
@@ -10,13 +11,21 @@
     <meta name='revisit-after' content='1 days' />
     <meta http-equiv="content-language" content="en" />
     <link rel="icon shortcut" type="image/png" sizes="16x16" href="http://t-scroll.com/theme/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
 	<style type="text/css">
 		* {
 			margin: 0;
 		}
 		body {
-			font-family: Arial;
+			font-family: 'Open Sans';
 		}
+        .banner {
+            width: 100%;
+            height: 280px;
+            display: inline-block;
+            background: url('./images/banner.png') center center no-repeat;
+            background-size: cover;
+        }
 		img {
 			max-width: 100%;
 		}
@@ -38,6 +47,36 @@
 			transition-duration: 500ms;
 			box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 		}
+        .tuds-seo {
+            display: none;
+        }
+        @media (max-width: 767px) {
+            .container {
+                width: 90%;
+                padding: 0 5%;
+            }
+            .banner {
+                width: 100%;
+                height: 150px;
+                display: inline-block;
+                background: url('./images/banner.png') center center no-repeat;
+                background-size: cover;
+            }
+        }
+        .footer {
+            float: left;
+            width: 100%;
+            text-align: center;
+            font-size: 13px;
+            margin-top: 50px;
+            padding-bottom: 15px;
+        }
+        .footer small {
+            font-size: 11px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
 	</style>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -50,20 +89,28 @@
     </script>
 </head>
 <body>
-	<img src="./images/banner.png" alt="">
+    <h1 class="banner">
+        <img class="tuds-seo" src="./images/about-checkbox-radio.png" alt="tuds crazychicken checkbox radio">
+    </h1>
 	<div class="container">
 		<a target="_blank" href="checkbox_radio.html">
 			Checkbox & Radio custom style CSS
 		</a>
+        <a target="_blank" href="checkbox_radio_bootstrap.html">
+            Checkbox & Radio custom style Bootstrap
+        </a>
 		<a target="_blank" href="checkbox_radio_font.html">
 			Checkbox & Radio custom style CSS Font
 		</a>
 		<a target="_blank" href="checkbox_radio_img_sprite.html">
 			Checkbox & Radio custom style CSS Sprite
 		</a>
-		<a target="_blank" href="checkbox_radio_bootstrap.html">
-			Checkbox & Radio custom style Bootstrap
-		</a>
 	</div>
+    <footer class="footer">
+        Another thing from <a href="http://tuds.ninja">Tuds - Crazychicken.</a>
+        <p>
+            <small>Code and documentation copyright 2017, MIT license.</small>
+        </p>
+    </footer>
 </body>
 </html>

@@ -3,6 +3,7 @@
 	<head>
 		<title>Checkbox Radio Bootstrap | Tuds</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="This is checkbox & radio, easy way to add checkbox-radio to your site or blog, all you need to do is add css class into your html tag, checkbox-radio do not used jQuery or javascript, It's used CSS3">
         <meta name="keywords" content="HTML, CSS, XML, JavaScript, CSS3, ES6, Npm, tuds, Crazychicken, checkbox_radio, checkbox_radio_bootstrap, checkbox_radio_font, checkbox_radio_img_sprite">
         <meta name="author" content="Tuds - Crazychicken">
@@ -10,6 +11,8 @@
         <meta name='revisit-after' content='1 days' />
         <meta http-equiv="content-language" content="en" />
         <link rel="icon shortcut" type="image/png" sizes="16x16" href="http://t-scroll.com/theme/images/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 		<link rel="stylesheet" href="css/checkbox_radio_bootstrap.css">
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -21,17 +24,108 @@
             ga('send', 'pageview');
         </script>
         <style type="text/css">
+            body {
+                font-family: 'Open Sans';
+                margin: 0;
+                padding: 0;
+                float: left;
+                width: 100%;
+            }
+            header {
+                text-align: center;
+                background: #f7f8f9;
+                display: block;
+                float: left;
+                width: 100%;
+                padding: 30px 0;
+                margin-bottom: 30px;
+                color: #ddd;
+            }
+            h1 {
+                margin: 0;
+                padding: 0;
+                font-weight: 400;
+            }
+            .container {
+                margin: 0 auto;
+                font-size: 13px;
+            }
             hr {
                 border: 1px solid #f7f8f9;
             }
+            .box-well {
+                background: #fafafa;
+                border: 1px solid #f7f8f9;
+                border-radius: 4px;
+                padding: 10px;
+                display: none;
+            }
+            .show {
+                display: block;
+            }
+            .btn {
+                border: none;
+                background: none;
+                color: #fff;
+                font-size: 12px;
+                border-radius: 3px;
+                background-color: #1a8bb6;
+                padding: 5px 8px;
+                outline: none;
+            }
+            .btn:hover,
+            .btn:focus {
+                outline: none;
+                color: #fff;
+                background-color: #316d84;
+            }
+            .btn small {
+                font-size: 11px;
+            }
+            .btn-toggle {
+                margin-bottom: 5px;
+            }
+            @media (max-width: 767px) {
+                .container {
+                    width: 90%;
+                    padding: 0 5%;
+                }
+                h1 {
+                    font-size: 24px;
+                }
+            }
+            .footer {
+                float: left;
+                width: 100%;
+                text-align: center;
+                font-size: 13px;
+                margin-top: 50px;
+                padding-bottom: 15px;
+            }
+            .footer small {
+                font-size: 11px;
+            }
+            .footer p {
+                margin: 5px 0;
+            }
         </style>
+        <script type="text/javascript">
+            $(document).ready( function (){
+                $('.btn-toggle').on('click', function (){
+                    $(this).next().slideToggle('slow');
+                })
+            });
+        </script>
 	</head>
 	<body>
+        <header>
+            <h1>Checkbox & Radio custom style Bootstrap</h1>
+        </header>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-6 col-xs-offset-3">
+				<div class="col-sm-6 col-sm-offset-3">
 					<form>
-                        <h4>Check box</h4>
+                        <h4>Checkbox</h4>
 						<div class="checkbox">
 							<label>
 								<input type="checkbox" value="">
@@ -60,6 +154,40 @@
 								Option is disabled & checked
 							</label>
 						</div>
+                        <br>
+                        <button type="button" class="btn btn-toggle">View source <small>>></small></button>
+<div class="box-well">
+<pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;checkbox&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;label&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;input</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;checkbox&quot;</span> <span style="color: #336699">value=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;i</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;fa fa-2x icon-checkbox&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;&lt;/i&gt;</span>
+        Option one is this and that&amp;mdash;be sure to include why it&#39;s great
+    <span style="color: #bb0066; font-weight: bold">&lt;/label&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;checkbox&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;label&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;input</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;checkbox&quot;</span> <span style="color: #336699">value=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;&quot;</span> <span style="color: #336699">checked</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;i</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;fa fa-2x icon-checkbox&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;&lt;/i&gt;</span>
+        Option one is this and that&amp;mdash;be sure to include why it&#39;s great
+    <span style="color: #bb0066; font-weight: bold">&lt;/label&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;checkbox disabled&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;label&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;input</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;checkbox&quot;</span> <span style="color: #336699">value=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;&quot;</span> <span style="color: #336699">disabled</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;i</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;fa fa-2x icon-checkbox&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;&lt;/i&gt;</span>
+        Option is disabled
+    <span style="color: #bb0066; font-weight: bold">&lt;/label&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;checkbox disabled&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;label&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;input</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;checkbox&quot;</span> <span style="color: #336699">value=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;&quot;</span> <span style="color: #336699">disabled</span> <span style="color: #336699">checked</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;i</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;fa fa-2x icon-checkbox&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;&lt;/i&gt;</span>
+        Option is disabled <span style="color: #a61717; background-color: #e3d2d2">&amp;</span> checked
+    <span style="color: #bb0066; font-weight: bold">&lt;/label&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+</pre>
+</div>
+                        <hr>
 						<h4>Radio</h4>
 						<div class="radio">
 							<label>
@@ -84,16 +212,49 @@
 						</div>
                         <div class="radio disabled">
                             <label>
-                                <input type="radio" name="optionsRadios" disabled checked>
+                                <input type="radio" name="optionsRadios-disabled" disabled checked>
                                 <i class="fa fa-2x icon-radio"></i>
                                 Option is disabled & checked
                             </label>
                         </div>
+                        <br>
+                        <button type="button" class="btn btn-toggle">View source <small>>></small></button>
+<div class="box-well">
+<pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;radio&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;label&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;input</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;radio&quot;</span> <span style="color: #336699">name=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;optionsRadios&quot;</span> <span style="color: #336699">checked</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;i</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;fa fa-2x icon-radio&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;&lt;/i&gt;</span>
+        Option one is this and that&amp;mdash;be sure to include why it&#39;s great
+    <span style="color: #bb0066; font-weight: bold">&lt;/label&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;radio&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;label&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;input</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;radio&quot;</span> <span style="color: #336699">name=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;optionsRadios&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;i</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;fa fa-2x icon-radio&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;&lt;/i&gt;</span>
+        Option two can be something else and selecting it will deselect option one
+    <span style="color: #bb0066; font-weight: bold">&lt;/label&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;radio disabled&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;label&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;input</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;radio&quot;</span> <span style="color: #336699">name=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;optionsRadios&quot;</span> <span style="color: #336699">disabled</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;i</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;fa fa-2x icon-radio&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;&lt;/i&gt;</span>
+        Option three is disabled
+    <span style="color: #bb0066; font-weight: bold">&lt;/label&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;radio disabled&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;label&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;input</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;radio&quot;</span> <span style="color: #336699">name=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;optionsRadios&quot;</span> <span style="color: #336699">disabled</span> <span style="color: #336699">checked</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;i</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;fa fa-2x icon-radio&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;&lt;/i&gt;</span>
+        Option is disabled <span style="color: #a61717; background-color: #e3d2d2">&amp;</span> checked
+    <span style="color: #bb0066; font-weight: bold">&lt;/label&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+</pre>
+</div>
 					</form>
 
                     <hr>
                     <form>
-                        <h4>Check box xs</h4>
+                        <h4>Checkbox xs</h4>
                         <div class="checkbox checkbox-xs">
                             <label>
                                 <input type="checkbox" value="">
@@ -122,6 +283,17 @@
                                 Option is disabled & checked
                             </label>
                         </div>
+                        <br>
+<div class="box-well show">
+<pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;checkbox checkbox-xs&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;label&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;input</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;checkbox&quot;</span> <span style="color: #336699">value=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;i</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;fa fa-lg icon-checkbox&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;&lt;/i&gt;</span>
+        Option one is this and that be sure to include why it&#39;s great
+    <span style="color: #bb0066; font-weight: bold">&lt;/label&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+</div>
+                        <hr>
 
                         <h4>Radio xs</h4>
                         <div class="radio radio-xs">
@@ -147,14 +319,30 @@
                         </div>
                         <div class="radio radio-xs disabled">
                             <label>
-                                <input type="radio" name="optionsRadios" disabled checked>
+                                <input type="radio" name="optionsRadios-xs-disabled" disabled checked>
                                 <i class="fa fa-lg icon-radio"></i>
                                 Option is disabled & checked
                             </label>
                         </div>
+<div class="box-well show">
+<pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;radio radio-xs&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;label&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;input</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;radio&quot;</span> <span style="color: #336699">name=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;optionsRadios&quot;</span> <span style="color: #336699">checked</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;i</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;fa fa-lg icon-radio&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;&lt;/i&gt;</span>
+        Option one is this and that be sure to include why it&#39;s great
+    <span style="color: #bb0066; font-weight: bold">&lt;/label&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+</pre>
+</div>
                     </form>
 				</div>
 			</div>
 		</div>
+        <footer class="footer">
+            Another thing from <a href="http://tuds.ninja">Tuds - Crazychicken.</a>
+            <p>
+                <small>Code and documentation copyright 2017, MIT license.</small>
+            </p>
+        </footer>
 	</body>
 </html>
