@@ -7,6 +7,12 @@
   .radio:hover {
     cursor: pointer; }
 
+.indent {
+  padding-left: 30px; }
+  .indent .icon-checkbox,
+  .indent .icon-radio {
+    margin-left: -30px; }
+
 .checkbox input[type="checkbox"],
 .radio input[type="radio"] {
   display: none; }
@@ -33,6 +39,11 @@
   background-position: -96px 0; }
 
 /*CHECKBOX-XS*/
+.checkbox-xs.indent {
+  padding-left: 25px; }
+  .checkbox-xs.indent .icon-checkbox {
+    margin-left: -25px; }
+
 .checkbox-xs input[type="checkbox"] + i,
 .radio-xs input[type="radio"] + i {
   height: 16px;
@@ -68,6 +79,11 @@
   background-position: -216px 0; }
 
 /*RADIO-XS*/
+.radio-xs.indent {
+  padding-left: 25px; }
+  .radio-xs.indent .icon-radio {
+    margin-left: -25px; }
+
 .radio-xs:hover input[type="radio"] + .icon-radio {
   background-position: -112px 0; }
 

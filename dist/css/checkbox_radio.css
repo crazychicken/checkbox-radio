@@ -7,6 +7,12 @@
   .radio:hover {
     cursor: pointer; }
 
+.indent {
+  padding-left: 30px; }
+  .indent .icon-checkbox,
+  .indent .icon-radio {
+    margin-left: -30px; }
+
 .checkbox input[type="checkbox"],
 .radio input[type="radio"] {
   display: none; }
@@ -59,6 +65,15 @@
 .radio-xs .icon-radio {
   height: 14px;
   width: 14px; }
+
+.checkbox-xs.indent,
+.radio-xs.indent {
+  padding-left: 25px; }
+  .checkbox-xs.indent .icon-checkbox,
+  .checkbox-xs.indent .icon-radio,
+  .radio-xs.indent .icon-checkbox,
+  .radio-xs.indent .icon-radio {
+    margin-left: -25px; }
 
 .checkbox-xs input[type="checkbox"]:checked + i:after,
 .checkbox-xs input[type="radio"]:checked + i:after,

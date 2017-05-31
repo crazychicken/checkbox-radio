@@ -2220,6 +2220,11 @@
   .radio .fa {
     width: 1em; }
 
+.indent {
+  padding-left: 30px; }
+  .indent .fa {
+    margin-left: -30px; }
+
 .checkbox input[type="checkbox"],
 .radio input[type="radio"] {
   display: none; }
@@ -2257,3 +2262,10 @@
 .checkbox-xs input[type="checkbox"] + i:before,
 .radio-xs input[type="radio"] + i:before {
   bottom: 0; }
+
+.checkbox-xs.indent,
+.radio-xs.indent {
+  padding-left: 20px; }
+  .checkbox-xs.indent .fa,
+  .radio-xs.indent .fa {
+    margin-left: -20px; }

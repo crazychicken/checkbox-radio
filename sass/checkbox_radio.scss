@@ -7,6 +7,14 @@
 		cursor: pointer;
 	}
 }
+// checkbox indent & radio indent
+.indent {
+    padding-left: 30px;
+    .icon-checkbox,
+    .icon-radio {
+        margin-left: -30px;
+    }
+}
 
 .checkbox input[type="checkbox"],
 .radio input[type="radio"] {
@@ -68,6 +76,14 @@
     .icon-radio {
         height: 14px;
         width: 14px;
+    }
+    // checkbox indent & radio indent
+    &.indent {
+        padding-left: 25px;
+        .icon-checkbox,
+        .icon-radio {
+            margin-left: -25px;
+        }
     }
     input[type="checkbox"],
     input[type="radio"] {

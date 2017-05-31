@@ -12,6 +12,13 @@
         width: 1em;
     }
 }
+// checkbox indent & radio indent
+.indent {
+    padding-left: 30px;
+    .fa {
+        margin-left: -30px;
+    }
+}
 
 .checkbox input[type="checkbox"],
 .radio input[type="radio"] {
@@ -59,5 +66,15 @@
 .radio-xs input[type="radio"] {
     & + i:before {
         bottom: 0;
+    }
+}
+// checkbox indent & radio indent
+.checkbox-xs,
+.radio-xs {
+    &.indent {
+        padding-left: 20px;
+        .fa {
+            margin-left: -20px;
+        }
     }
 }

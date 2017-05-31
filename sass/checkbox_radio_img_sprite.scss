@@ -7,6 +7,14 @@
 		cursor: pointer;
 	}
 }
+// checkbox indent & radio indent
+.indent {
+    padding-left: 30px;
+    .icon-checkbox,
+    .icon-radio {
+        margin-left: -30px;
+    }
+}
 
 .checkbox input[type="checkbox"],
 .radio input[type="radio"] {
@@ -37,6 +45,15 @@
 }
 
 /*CHECKBOX-XS*/
+.checkbox-xs {
+    // checkbox indent
+    &.indent {
+        padding-left: 25px;
+        .icon-checkbox {
+            margin-left: -25px;
+        }
+    }
+}
 .checkbox-xs input[type="checkbox"],
 .radio-xs input[type="radio"] {
     & + i {
@@ -80,6 +97,15 @@
 	}
 }
 /*RADIO-XS*/
+.radio-xs {
+    // radio indent
+    &.indent {
+        padding-left: 25px;
+        .icon-radio {
+            margin-left: -25px;
+        }
+    }
+}
 .radio-xs:hover input[type="radio"] + .icon-radio {
     background-position: -112px 0;
 }

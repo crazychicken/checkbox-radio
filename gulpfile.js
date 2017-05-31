@@ -11,7 +11,6 @@ gulp.task('html', function(){
         "indent_size": 4
     };
 	gulp.src([
-        './index.html',
         './html/*.html'
     ])
     .pipe(gulp_file_include())
