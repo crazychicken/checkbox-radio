@@ -1,6 +1,10 @@
 # Checkbox&radio
 
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]
+
+
 ![enter image description here](http://tuds.ninja/checkbox-radio/dist/images/about-checkbox-radio.png)
+
 
 ## Quick start
 * Clone the repo: `git clone git@github.com:crazychicken/checkbox-radio.git`
@@ -89,6 +93,10 @@ sass/
 * Facebook: https://www.facebook.com/tudscss/
 * Youtube:  https://www.youtube.com/channel/UCDACe-7BFGDucQoxTDfPotw
 * Twitter:   https://twitter.com/mtu_truong
+
+[downloads-image]: https://img.shields.io/npm/dm/checkbox-radio.svg
+[npm-url]: https://www.npmjs.com/package/checkbox-radio
+[npm-image]: https://img.shields.io/npm/v/checkbox-radio.svg
 
 ## Copyright and license
 
